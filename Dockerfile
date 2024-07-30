@@ -1,5 +1,5 @@
 FROM python:3.12
-ADD . /src
+ADD handlers.py .
 RUN pip install kopf
 RUN pip install kubernetes
-CMD kopf run /src/handlers.py --verbose
+CMD kopf run handlers.py --verbose
