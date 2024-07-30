@@ -1,0 +1,9 @@
+apiVersion: example.com/v1
+kind: ScalingDeploy
+metadata:
+  name: example-scalingdeploy
+  namespace: default
+spec:
+  deploymentName: example-deployment
+  replicamax: 10
+  replicamin: 1
